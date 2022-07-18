@@ -1,0 +1,445 @@
+{
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				// #ifdef MP
+				"navigationBarTitleText": "法寶禮請",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true,
+				// #endif
+				"app-plus": {
+					// 導航欄修改 https://static.kancloud.cn/wangking/uniapp/1885150
+					"titleNView": {
+						"type": "default",
+
+						"searchInput": {
+							"backgroundColor": "rgba(231, 231, 231,.7)",
+							"borderRadius": "16px",
+							"placeholder": "搜索法寶",
+							"disabled": true,
+							"placeholderColor": "#606266"
+						},
+						"buttons": [{
+								"fontSrc": "/static/iconfont.ttf",
+								//"text": "\ue60d",
+								"text": "\ue68c",
+								// "text": "香港佛陀教育協會",
+								"fontSize": "27",
+								// "fontWeight": "400",
+								"overflow": "auto",
+								"padding": "10",
+								"color": "#00427f",
+								"float": "left"
+							}
+							// ,
+							// {
+							// 	"fontSrc": "/static/yticon.ttf",
+							// 	"text": "\ue744",
+							// 	"fontSize": "27",
+							// 	"color": "#7587ff",
+							// 	"background": "rgba(0,0,0,0)"
+							// }
+						],
+						"tags": [{
+							"tag": "img",
+							"src": "/static/images/M.png",
+							"position": {
+								"left": "auto",
+								"top": "auto",
+								"width": "110px",
+								"height": "26px"
+							}
+						}]
+
+					}
+				}
+			}
+		}, {
+			"path": "pages/search/search",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/order/orderDetail",
+			"style": {
+				"navigationBarTitleText": "詳情展示",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		}, {
+			"path": "pages/order/logistics",
+			"style": {
+				"navigationBarTitleText": "物流詳情",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		},
+
+		{
+			"path": "pages/cart/cart",
+			"style": {
+				"navigationBarTitleText": "禮請單"
+					// #ifdef MP-WEIXIN
+					,
+				"navigationStyle": "custom"
+				// #endif
+			}
+		}, {
+			"path": "pages/order/createStoreOrder",
+			"style": {
+				"navigationBarTitleText": "創建訂單"
+			}
+		},{
+			"path": "pages/public/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false,
+					"animationType": "slide-in-bottom"
+				}
+			}
+		}, {
+			"path": "pages/public/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false,
+					"animationType": "slide-in-bottom"
+				}
+			}
+		}, {
+			"path": "pages/public/reg",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false,
+					"animationType": "slide-in-bottom"
+				}
+			}
+		}, {
+			"path": "pages/index/user",
+			"style": {
+				"navigationBarTitleText": "我的",
+				// #ifdef MP
+				"navigationStyle": "custom",
+				// #endif
+
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"type": "transparent",
+						"buttons": [{
+							"fontSrc": "/static/yticon.ttf",
+							"text": "\ue60f",
+							"fontSize": "24",
+							"color": "#303133",
+							"width": "46px",
+							"background": "rgba(0,0,0,0)"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "我的訂單",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		},{
+			"path": "pages/order/createOrder",
+			"style": {
+				"navigationBarTitleText": "創建訂單"
+			}
+		},  {
+			"path": "pages/category/category",
+			"style": {
+				"navigationBarTitleText": "分類",
+				// #ifdef MP-WEIXIN
+				"navigationStyle": "custom",
+				// #endif
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		}, {
+			"path": "pages/public/loginCode",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false,
+					"animationType": "slide-in-bottom"
+				}
+			}
+		}, {
+			"path": "pages/index/user",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/index/projectManagement",
+			"style": {
+				"navigationBarTitleText": "專案辦理",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/index/projectManagementDetail",
+			"style": {
+				"navigationBarTitleText": "專案辦理詳情",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"subPackages": [
+		{
+			"root": "pagesA",
+			"pages": [
+
+				{
+					"path": "product/categoryAttr",
+					"style": {
+						"navigationBarTitleText": "類型法寶",
+						"app-plus": {
+							"titleNView": {
+								"type": "transparent"
+							}
+						}
+					}
+				},
+				{
+					"path": "product/tagGoodslist",
+					"style": {
+						"navigationBarTitleText": "標簽法寶",
+						"app-plus": {
+							"titleNView": {
+								"type": "transparent"
+							}
+						}
+					}
+				},
+
+				{
+					"path": "product/product",
+					"style": {
+						"navigationBarTitleText": "法寶詳情",
+						"app-plus": {
+							"titleNView": {
+								"type": "transparent"
+							}
+						}
+					}
+				},
+				{
+					"path": "product/list",
+					"style": {
+						"enablePullDownRefresh": true,
+						"navigationBarTitleText": "法寶列表"
+					}
+				},
+				{
+					"path": "build/notice",
+					"style": {
+						"navigationBarTitleText": "通知"
+					}
+				}
+
+
+			]
+		},
+		{
+			"root": "pagesU",
+			"pages": [{
+					"path": "set/set",
+					"style": {
+						"navigationBarTitleText": "設置"
+					}
+				},
+
+				{
+					"path": "help/help",
+					"style": {
+						"navigationBarTitleText": "幫助文檔"
+					}
+				},
+				{
+					"path": "content/index",
+					"style": {
+						"navigationBarTitleText": "發現"
+					}
+				}, {
+					"path": "content/details",
+					"style": {
+						"navigationBarTitleText": "詳情"
+					}
+				},
+				{
+					"path": "content/richText",
+					"style": {
+						"navigationBarTitleText": ""
+					}
+				},
+				{
+					"path": "content/webView",
+					"style": {
+						"navigationBarTitleText": ""
+					}
+				},
+				{
+					"path": "user/share",
+					"style": {
+						"navigationBarTitleText": "分享"
+					}
+				},
+				{
+					"path": "user/reset_password",
+					"style": {
+						"navigationBarTitleText": "忘記密碼",
+						"app-plus": {
+							"bounce": "none"
+						}
+					}
+				}, {
+					"path": "user/forget",
+					"style": {
+						"navigationBarTitleText": "忘記密碼",
+						"app-plus": {
+							"bounce": "none"
+						}
+					}
+				}, {
+					"path": "user/profile",
+					"style": {
+						"enablePullDownRefresh": true,
+						"navigationBarTitleText": "個人信息"
+					}
+				},
+				{
+					"path": "user/askList",
+					"style": {
+						"navigationBarTitleText": "專案辦理"
+					}
+				},
+				{
+					"path": "user/addAsk",
+					"style": {
+						"navigationBarTitleText": "專案辦理"
+					}
+				},
+				{
+					"path": "notice/notice",
+					"style": {
+						"navigationBarTitleText": "通知"
+					}
+				}, {
+					"path": "notice/subjectDetail",
+					"style": {
+						"navigationBarTitleText": "詳情展示",
+						"app-plus": {
+							"titleNView": {
+								"type": "transparent"
+							}
+						}
+					}
+				}, {
+					"path": "address/address",
+					"style": {
+						"navigationBarTitleText": "收貨地址"
+					}
+				}, {
+					"path": "address/addressManage",
+					"style": {
+						"navigationBarTitleText": ""
+					}
+				},
+				{
+					"path": "article/detail",
+					"style": {
+						"navigationBarTitleText": ""
+					}
+				}, {
+					"path": "help/index",
+					"style": {
+						"navigationBarTitleText": "幫助文章",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "help/detail",
+					"style": {
+						"navigationBarTitleText": "文章詳情",
+						"enablePullDownRefresh": false
+					}
+
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "法寶禮請",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#f8f8f8"
+	},
+	"tabBar": {
+		"color": "#C0C4CC",
+		"selectedColor": "#fa436a",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tab-home.png",
+				"selectedIconPath": "static/tab-home-current.png",
+				"text": "首頁"
+
+			},
+			{
+				"pagePath": "pages/category/category",
+				"iconPath": "static/tab-cate.png",
+				"selectedIconPath": "static/tab-cate-current.png",
+				"text": "分類"
+			},
+
+			{
+				"pagePath": "pages/cart/cart",
+				"iconPath": "static/tab-cart.png",
+				"selectedIconPath": "static/tab-cart-current.png",
+				"text": "禮請單"
+			},
+			{
+				"pagePath": "pages/index/user",
+				"iconPath": "static/tab-my.png",
+				"selectedIconPath": "static/tab-my-current.png",
+				"text": "我的"
+			}
+		]
+	},
+	"condition": {
+		//模式配置，僅開發期間生效
+		"current": 0, //當前激活的模式(list 的索引項)
+		"list": [{
+			"name": "", //模式名稱
+			"path": "", //啟動頁面，必選
+			"query": "" //啟動參數，在頁面的onLoad函數裏面得到
+		}]
+	}
+}

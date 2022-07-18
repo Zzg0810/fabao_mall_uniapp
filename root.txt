@@ -1,0 +1,27 @@
+
+PC购物端:http://springboot.lecshop.cn
+微信公众号H5：关注江苏乐商公众号，查看微商城
+微信小程序购物端：关注江苏乐商公众号，查看小程序。
+APP购物端（安装密码：888888）：
+安卓：https://www.pgyer.com/6dG2
+IOS:  https://www.pgyer.com/EIFP
+体验账户：用户名：13000000001 密码:123456ts支付密码:123456ts
+ 
+PC平台管理端（请使用Google Chrome浏览器）
+springboot.lecshop.cn/admin 用户名：lecshopbbc 密码:lecshopbbcts
+PC商家管理端（请使用Google Chrome浏览器）
+springboot.lecshop.cn/store 
+APP商家管理端（安装密码：888888）：
+安卓：https://www.pgyer.com/b8XV
+IOS：https://www.pgyer.com/vokS
+商家管理端账号和密码：用户名：13000000003 密码:123456ts
+ 
+PC门店管理端（请使用Google Chrome浏览器）
+springboot.lecshop.cn/store  用户名：13000000002 密码:123456ts
+
+
+
+乐商
+1.促销 好像没有支持到sku 只支持到法宝
+2.优惠券没有指定法宝 估计是直接所有满足条件的法宝都可以使用
+3.订单没有物流查询
